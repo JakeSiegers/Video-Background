@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.background {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				z-index: -1;
+				margin-top: -540px;
+				margin-left: -960px;
+				height: 1080px;
+				width: 1920px;
+				background-color: #000;
+			}
+
+			.background iframe {
+				min-height: 100%;
+				min-width: 100%;
+			}
+
+			.gradient {
+				background-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.90) 100%);
+				display: block;
+				height: 1080px;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				content: "";
+				z-index: -1;
+			}	
+		</style>
+	</head>
+	<body>
+		<div class="background">
+		 	<iframe frameborder="0" src="https://youtube.com/embed/1EDB9JZew_k?autoplay=1&controls=0&showinfo=0&autohide=1"></iframe>
+		</div>
+		<div class="gradient"></div>
+	</body>
+</html>
